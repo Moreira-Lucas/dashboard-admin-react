@@ -1,0 +1,139 @@
+/*SCROLLBAR STYLE*/
+
+::-webkit-scrollbar{
+    width: 0.25rem;
+    height: 0.4rem;
+  }
+  ::-webkit-scrollbar-track{
+    box-shadow:inset 0 0 0.3rem;
+    border-radius:0.5rem;
+  }
+  ::-webkit-scrollbar-thumb{
+    background:#3ea175;
+    border-radius: 0.5rem;
+  
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background:#a5aaad;
+  }
+
+
+#sidebar{
+    background:#020509;
+    grid-area:sidebar;
+    overflow-y:auto;
+    padding:1.5rem;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    
+
+}
+
+.sideBar--title{
+display:flex;
+justify-content:center;
+align-items:center;
+color:#f3f4f6;
+margin-bottom: 2rem;
+}
+
+.sideBar--title div img{
+width:3.1rem;
+object-fit:cover;
+}
+
+
+.sideBar--title  div  h1{
+    font-size: 1rem;
+    display: inline;
+    margin-left:1rem;
+}
+
+.sideBar--title i{
+    font-size:1rem;
+    display:none;
+
+}
+
+
+.sideBar--menu h2{
+    color:#3ea175;
+    font-size:16px;
+    margin:1rem 0 0.3rem 0;
+
+}
+
+.sideBar--link{
+    color:#f3f4f6;
+    padding:0.8rem;
+    border-radius: 0.2rem;
+    margin-bottom: 0.3rem;
+
+
+}
+
+.active-menu-link{
+    background:rgba(62, 161, 117, 0.3);
+    color:#3ea175;
+}
+
+.active-menu-link a{
+    color:#3ea175 !important;
+
+}
+
+.sideBar--link a {
+    text-decoration: none;
+    color:#a5aaad;
+    font-weight: 700;
+}
+
+.sideBar--link a:focus {
+    padding:0.45rem;
+    background:rgba(62, 161, 117, 0.3);
+    border-radius:0.1rem;
+
+}
+
+.sideBar--link i{
+    margin-right: 0.7rem;
+    font-size:1.1rem;
+
+}
+
+.sideBar--logout{
+    margin-top:1.3rem;
+    padding:0.8rem;
+    color:#e65061;
+}
+
+.sideBar--logout i{
+    margin-right:0.8rem;
+    font-size: 1.1rem;
+}
+
+.sideBar--logout a{
+    text-decoration:none;
+    color:#e65061;
+    font-weight: 700;
+    text-transform:uppercase;
+}
+
+.sideBar--responsive{
+    display:inline;
+    z-index:9999;
+    left:0;
+    position: absolute;
+}
+
+@media only screen and (max-width: 978px){
+    #sideBar{
+        display:none;
+
+    }
+    .sideBar--title i{
+        display: inline;
+    }
+}
+
+
